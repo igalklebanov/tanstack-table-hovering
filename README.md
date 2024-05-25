@@ -6,6 +6,8 @@ A custom `@tanstack/*-table` feature that allows conditional rendering based on 
 npm i tanstack-table-hovering
 ```
 
+Requires `@tanstack/*-table` >= v8.14.0.
+
 ## Usage
 
 The examples below are for `@tanstack/react-table` but should work for other `@tanstack/*-table` libraries as well.
