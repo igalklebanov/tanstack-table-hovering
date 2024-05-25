@@ -1,5 +1,3 @@
-# tanstack-table-hover
-
 A custom @tanstack/\*-table feature that allows conditional rendering based on hovering over a row. e.g. rendering buttons in a cell only for the hovered row.
 
 ## Installation
