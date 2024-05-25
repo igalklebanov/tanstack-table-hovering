@@ -1,0 +1,66 @@
+{
+  "name": "tanstack-table-hovering",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "A custom feature for @tanstack/*-table that allows conditional rendering based on hovering over a row. e.g. rendering buttons in a cell only for the hovered row.",
+  "author": "Igal Klebanov <igalklebanov@gmail.com> (https://github.com/igalklebanov)",
+  "license": "MIT",
+  "repository": "git://github.com/igalklebanov/transtack-table-hovering.git",
+  "scripts": {
+    "build": "tsup",
+    "check:dts": "attw --pack .",
+    "prepublishOnly": "pnpm build && pnpm check:dts && pnpm test",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "@tanstack/table-core": "^8.14.0"
+  },
+  "peerDependenciesMeta": {
+    "@tanstack/table-core": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.3",
+    "@tanstack/react-table": "^8.17.3",
+    "@tanstack/table-core": "^8.17.3",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "@testing-library/user-event": "^14.5.2",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "jsdom": "^24.0.0",
+    "react": "^18.3.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "keywords": [
+    "tanstack",
+    "table",
+    "feature",
+    "hover",
+    "hovering",
+    "react"
+  ]
+}
