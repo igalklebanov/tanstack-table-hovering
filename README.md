@@ -50,6 +50,8 @@ export function MyTable(props: MyTableProps) {
     _features: [HoveringFeature],
     ...
   })
+
+  ...
 }
 ```
 
