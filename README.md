@@ -1,4 +1,4 @@
-A custom @tanstack/\*-table feature that allows conditional rendering based on hovering over a row. e.g. rendering buttons in a cell only for the hovered row.
+A custom `@tanstack/*-table` feature that allows conditional rendering based on hovering over a row. e.g. rendering buttons in a cell only for the hovered row.
 
 ## Installation
 
@@ -7,6 +7,8 @@ npm i tanstack-table-hovering
 ```
 
 ## Usage
+
+The examples below are for `@tanstack/react-table` but should work for other `@tanstack/*-table` libraries as well.
 
 ### Augment @tanstack/\*-table module
 
